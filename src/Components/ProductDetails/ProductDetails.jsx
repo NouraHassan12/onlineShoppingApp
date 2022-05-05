@@ -40,8 +40,14 @@ function ProductDetails({
               <img className={classes.img} src={productData.product.image} />
             </div>
             <div class="col-md-6">
-              <Typography variant="h3">{productData.product.title}</Typography>
-              <Typography variant="h5">
+              <Typography variant="h3" className={classes.ProductTitle}>
+                {productData.product.title}
+              </Typography>
+              <Typography
+                variant="h5"
+                className={classes.ProductTitle}
+                style={{ color: "gray" }}
+              >
                 {productData.product.category}
               </Typography>
               <Grid class={classes.rate}>

@@ -26,4 +26,11 @@ export const useStyles = makeStyles((theme) => ({
     color: "gray",
     lineHeight: "23px",
   },
+  ProductTitle: {
+    fontSize: "21px !important",
+    lineHeight: "22px !important",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "15px !important",
+    },
+  },
 }));
