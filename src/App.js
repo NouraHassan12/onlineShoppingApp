@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       {/* <SideMenu /> */}
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <ToastContainer />
         <Switch>
           <Route exact path="/" component={Login} />
